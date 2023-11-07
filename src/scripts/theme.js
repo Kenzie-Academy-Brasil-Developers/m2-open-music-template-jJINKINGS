@@ -1,4 +1,4 @@
-const darkMode = () => {
+export const darkMode = () => {
     const darkBtn = document.querySelector(".header__btn");
 
     darkBtn.addEventListener("click", () => {
@@ -10,7 +10,7 @@ const darkMode = () => {
     })
 }
 
-const verifyMode = () => {
+export const verifyMode = () => {
     const darkInfo = JSON.parse(localStorage.getItem("@openMusic:dark-mode"));
     const html = document.querySelector("html");
     const btnIcone = document.querySelector(".header__btn");
@@ -22,5 +22,3 @@ const verifyMode = () => {
 
 }
 
-darkMode();
-verifyMode();
